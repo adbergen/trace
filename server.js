@@ -34,3 +34,7 @@ db.sequelize.sync().then(() => {
     );
   });
 });
+
+
+//// apis working
+///UPS KEY= 3D873E8D1E8C53F6
