@@ -1,0 +1,174 @@
+{
+  "id": "trk_d252cebe3a8a4219b0db8ad67eaf8399",
+  "object": "Tracker",
+  "mode": "production",
+  "tracking_code": "9374889727009104132569",
+  "status": "delivered",
+  "status_detail": "arrived_at_destination",
+  "created_at": "2020-09-01T14:48:29Z",
+  "updated_at": "2020-09-01T14:48:29Z",
+  "signed_by": null,
+  "weight": null,
+  "est_delivery_date": null,
+  "shipment_id": null,
+  "carrier": "USPS",
+  "tracking_details": [
+    {
+      "object": "TrackingDetail",
+      "message": "Picked Up by Shipping Partner, USPS Awaiting Item",
+      "description": "August 25 11:30 pm Picked Up by Shipping Partner, USPS Awaiting Item in STATEN ISLAND, NY",
+      "status": "in_transit",
+      "status_detail": "in_transit",
+      "datetime": "2020-08-25T23:30:00Z",
+      "source": "USPS",
+      "carrier_code": "80",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "STATEN ISLAND",
+        "state": "NY",
+        "country": null,
+        "zip": "10314"
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Departed Shipping Partner Facility, USPS Awaiting Item",
+      "description": "August 26 5:17 am Departed Shipping Partner Facility, USPS Awaiting Item in STATEN ISLAND, NY",
+      "status": "in_transit",
+      "status_detail": "departed_facility",
+      "datetime": "2020-08-26T05:17:00Z",
+      "source": "USPS",
+      "carrier_code": "82",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "STATEN ISLAND",
+        "state": "NY",
+        "country": null,
+        "zip": "10314"
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Departed Shipping Partner Facility, USPS Awaiting Item",
+      "description": "August 26 11:07 pm Departed Shipping Partner Facility, USPS Awaiting Item in CARTERET, NJ",
+      "status": "in_transit",
+      "status_detail": "departed_facility",
+      "datetime": "2020-08-26T23:07:00Z",
+      "source": "USPS",
+      "carrier_code": "82",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "CARTERET",
+        "state": "NJ",
+        "country": null,
+        "zip": "07008"
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "USPS in possession of item",
+      "description": "August 27 3:25 am USPS in possession of item in FORT LEE, NJ",
+      "status": "in_transit",
+      "status_detail": "arrived_at_facility",
+      "datetime": "2020-08-27T03:25:00Z",
+      "source": "USPS",
+      "carrier_code": "03",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "FORT LEE",
+        "state": "NJ",
+        "country": null,
+        "zip": "07024"
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Arrived at Post Office",
+      "description": "August 27 8:43 am Arrived at Post Office in ENGLEWOOD CLIFFS, NJ",
+      "status": "in_transit",
+      "status_detail": "arrived_at_facility",
+      "datetime": "2020-08-27T08:43:00Z",
+      "source": "USPS",
+      "carrier_code": "07",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "ENGLEWOOD CLIFFS",
+        "state": "NJ",
+        "country": null,
+        "zip": "07632"
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Out for Delivery",
+      "description": "August 27 8:54 am Out for Delivery in FORT LEE, NJ",
+      "status": "out_for_delivery",
+      "status_detail": "out_for_delivery",
+      "datetime": "2020-08-27T08:54:00Z",
+      "source": "USPS",
+      "carrier_code": "OF",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "FORT LEE",
+        "state": "NJ",
+        "country": null,
+        "zip": "07024"
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Delivered, In/At Mailbox",
+      "description": "August 27 4:28 pm Delivered, In/At Mailbox in FORT LEE, NJ",
+      "status": "delivered",
+      "status_detail": "arrived_at_destination",
+      "datetime": "2020-08-27T16:28:00Z",
+      "source": "USPS",
+      "carrier_code": "01",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "FORT LEE",
+        "state": "NJ",
+        "country": null,
+        "zip": "07024"
+      }
+    }
+  ],
+  "carrier_detail": {
+    "object": "CarrierDetail",
+    "service": "Parcel Select Lightweight",
+    "container_type": null,
+    "est_delivery_date_local": null,
+    "est_delivery_time_local": null,
+    "origin_location": "FORT LEE NJ, 07024",
+    "origin_tracking_location": {
+      "object": "TrackingLocation",
+      "city": "STATEN ISLAND",
+      "state": "NY",
+      "country": null,
+      "zip": "10314"
+    },
+    "destination_location": "FORT LEE NJ, 07024",
+    "destination_tracking_location": {
+      "object": "TrackingLocation",
+      "city": "FORT LEE",
+      "state": "NJ",
+      "country": null,
+      "zip": "07024"
+    },
+    "guaranteed_delivery_date": null,
+    "alternate_identifier": null,
+    "initial_delivery_attempt": "2020-08-27T16:28:00Z"
+  },
+  "finalized": true,
+  "is_return": false,
+  "public_url": "https://track.easypost.com/djE6dHJrX2QyNTJjZWJlM2E4YTQyMTliMGRiOGFkNjdlYWY4Mzk5",
+  "fees": [
+    {
+      "object": "Fee",
+      "type": "TrackerFee",
+      "amount": "0.00000",
+      "charged": true,
+      "refunded": false
+    }
+  ]
+}
