@@ -1,6 +1,8 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const trackingRequest = require("../util/tracker-api");
+const fs = require("fs");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -18,6 +20,7 @@ module.exports = function(app) {
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
   app.post("/api/signup", (req, res) => {
+    console.log("POST  /api/signup");
     db.User.create({
       email: req.body.email,
       password: req.body.password,
@@ -32,22 +35,26 @@ module.exports = function(app) {
 
   // Route for logging user out
   app.get("/logout", (req, res) => {
+    console.log("GET  /logout");
     req.logout();
     res.redirect("/");
   });
 
   // Route for getting some data about our user to be used client side
-  app.get("/api/user_data", (req, res) => {
+  app.post("/api/tracking", (req, res) => {
+    console.log("POST  /api/tracking");
     if (!req.user) {
       // The user is not logged in, send back an empty object
       res.json({});
     } else {
+      console.log(req.body);
+      trackingRequest(req.body.tracking, req.body.carrier);
+      var jsonData = fs.readFileSync("trackingfile.json", "utf8");
+      // console.log(jsonData);
+
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
-      res.json({
-        email: req.user.email,
-        id: req.user.id,
-      });
+      res.json(JSON.parse(jsonData));
     }
   });
 };
