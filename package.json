@@ -14,13 +14,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.20.0",
     "bcryptjs": "2.4.3",
+    "dotenv": "^8.2.0",
+    "easypost": "^0.1.1",
     "express": "^4.17.0",
     "express-session": "^1.16.1",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^5.8.6"
+    "path": "^0.12.7",
+    "querystring": "^0.2.0",
+    "request": "^2.88.2",
+    "require": "^2.4.20",
+    "sequelize": "^5.8.6",
+    "shipit": "^1.2.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
