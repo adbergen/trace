@@ -36,8 +36,8 @@ var trackingRequest = function(trackingNumber, carrierNumber) {
 
   req.write(
     qs.stringify({
-      "tracker[carrier]": "USPS",
-      "tracker[tracking_code]": "9374889727009104132569",
+      "tracker[carrier]": carrierNumber,
+      "tracker[tracking_code]": trackingNumber,
     })
   );
   req.end();

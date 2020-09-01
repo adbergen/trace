@@ -1,12 +1,12 @@
 {
-  "id": "trk_d252cebe3a8a4219b0db8ad67eaf8399",
+  "id": "trk_3cb45dd4c20446a69546d36c97060dd4",
   "object": "Tracker",
   "mode": "production",
-  "tracking_code": "9374889727009104132569",
+  "tracking_code": "9341989727009099933720",
   "status": "delivered",
   "status_detail": "arrived_at_destination",
-  "created_at": "2020-09-01T14:48:29Z",
-  "updated_at": "2020-09-01T14:48:29Z",
+  "created_at": "2020-09-01T20:32:50Z",
+  "updated_at": "2020-09-01T20:32:50Z",
   "signed_by": null,
   "weight": null,
   "est_delivery_date": null,
@@ -16,44 +16,44 @@
     {
       "object": "TrackingDetail",
       "message": "Picked Up by Shipping Partner, USPS Awaiting Item",
-      "description": "August 25 11:30 pm Picked Up by Shipping Partner, USPS Awaiting Item in STATEN ISLAND, NY",
+      "description": "August 22 5:17 am Picked Up by Shipping Partner, USPS Awaiting Item in PAULSBORO, NJ",
       "status": "in_transit",
       "status_detail": "in_transit",
-      "datetime": "2020-08-25T23:30:00Z",
+      "datetime": "2020-08-22T05:17:00Z",
       "source": "USPS",
       "carrier_code": "80",
       "tracking_location": {
         "object": "TrackingLocation",
-        "city": "STATEN ISLAND",
-        "state": "NY",
+        "city": "PAULSBORO",
+        "state": "NJ",
         "country": null,
-        "zip": "10314"
+        "zip": "08066"
       }
     },
     {
       "object": "TrackingDetail",
       "message": "Departed Shipping Partner Facility, USPS Awaiting Item",
-      "description": "August 26 5:17 am Departed Shipping Partner Facility, USPS Awaiting Item in STATEN ISLAND, NY",
+      "description": "August 22 9:30 am Departed Shipping Partner Facility, USPS Awaiting Item in PAULSBORO, NJ",
       "status": "in_transit",
       "status_detail": "departed_facility",
-      "datetime": "2020-08-26T05:17:00Z",
+      "datetime": "2020-08-22T09:30:00Z",
       "source": "USPS",
       "carrier_code": "82",
       "tracking_location": {
         "object": "TrackingLocation",
-        "city": "STATEN ISLAND",
-        "state": "NY",
+        "city": "PAULSBORO",
+        "state": "NJ",
         "country": null,
-        "zip": "10314"
+        "zip": "08066"
       }
     },
     {
       "object": "TrackingDetail",
       "message": "Departed Shipping Partner Facility, USPS Awaiting Item",
-      "description": "August 26 11:07 pm Departed Shipping Partner Facility, USPS Awaiting Item in CARTERET, NJ",
+      "description": "August 22 7:54 pm Departed Shipping Partner Facility, USPS Awaiting Item in CARTERET, NJ",
       "status": "in_transit",
       "status_detail": "departed_facility",
-      "datetime": "2020-08-26T23:07:00Z",
+      "datetime": "2020-08-22T19:54:00Z",
       "source": "USPS",
       "carrier_code": "82",
       "tracking_location": {
@@ -66,28 +66,28 @@
     },
     {
       "object": "TrackingDetail",
-      "message": "USPS in possession of item",
-      "description": "August 27 3:25 am USPS in possession of item in FORT LEE, NJ",
+      "message": "Accepted at USPS Destination Facility",
+      "description": "August 23 3:55 am Accepted at USPS Destination Facility in ENGLEWOOD CLIFFS, NJ",
       "status": "in_transit",
-      "status_detail": "arrived_at_facility",
-      "datetime": "2020-08-27T03:25:00Z",
+      "status_detail": "received_at_destination_facility",
+      "datetime": "2020-08-23T03:55:00Z",
       "source": "USPS",
-      "carrier_code": "03",
+      "carrier_code": "AD",
       "tracking_location": {
         "object": "TrackingLocation",
-        "city": "FORT LEE",
+        "city": "ENGLEWOOD CLIFFS",
         "state": "NJ",
         "country": null,
-        "zip": "07024"
+        "zip": "07632"
       }
     },
     {
       "object": "TrackingDetail",
-      "message": "Arrived at Post Office",
-      "description": "August 27 8:43 am Arrived at Post Office in ENGLEWOOD CLIFFS, NJ",
+      "message": "Arrived at Hub",
+      "description": "August 23 5:10 am Arrived at Hub in ENGLEWOOD CLIFFS, NJ",
       "status": "in_transit",
       "status_detail": "arrived_at_facility",
-      "datetime": "2020-08-27T08:43:00Z",
+      "datetime": "2020-08-23T05:10:00Z",
       "source": "USPS",
       "carrier_code": "07",
       "tracking_location": {
@@ -101,12 +101,12 @@
     {
       "object": "TrackingDetail",
       "message": "Out for Delivery",
-      "description": "August 27 8:54 am Out for Delivery in FORT LEE, NJ",
+      "description": "August 23 7:16 am Out for Delivery in FORT LEE, NJ",
       "status": "out_for_delivery",
       "status_detail": "out_for_delivery",
-      "datetime": "2020-08-27T08:54:00Z",
+      "datetime": "2020-08-23T07:16:00Z",
       "source": "USPS",
-      "carrier_code": "OF",
+      "carrier_code": "59",
       "tracking_location": {
         "object": "TrackingLocation",
         "city": "FORT LEE",
@@ -117,11 +117,11 @@
     },
     {
       "object": "TrackingDetail",
-      "message": "Delivered, In/At Mailbox",
-      "description": "August 27 4:28 pm Delivered, In/At Mailbox in FORT LEE, NJ",
+      "message": "Delivered, Front Door/Porch",
+      "description": "August 23 9:54 am Delivered, Front Door/Porch in FORT LEE, NJ",
       "status": "delivered",
       "status_detail": "arrived_at_destination",
-      "datetime": "2020-08-27T16:28:00Z",
+      "datetime": "2020-08-23T09:54:00Z",
       "source": "USPS",
       "carrier_code": "01",
       "tracking_location": {
@@ -135,17 +135,17 @@
   ],
   "carrier_detail": {
     "object": "CarrierDetail",
-    "service": "Parcel Select Lightweight",
+    "service": "Bound Printed Matter",
     "container_type": null,
     "est_delivery_date_local": null,
     "est_delivery_time_local": null,
     "origin_location": "FORT LEE NJ, 07024",
     "origin_tracking_location": {
       "object": "TrackingLocation",
-      "city": "STATEN ISLAND",
-      "state": "NY",
+      "city": "PAULSBORO",
+      "state": "NJ",
       "country": null,
-      "zip": "10314"
+      "zip": "08066"
     },
     "destination_location": "FORT LEE NJ, 07024",
     "destination_tracking_location": {
@@ -157,11 +157,11 @@
     },
     "guaranteed_delivery_date": null,
     "alternate_identifier": null,
-    "initial_delivery_attempt": "2020-08-27T16:28:00Z"
+    "initial_delivery_attempt": "2020-08-23T09:54:00Z"
   },
   "finalized": true,
   "is_return": false,
-  "public_url": "https://track.easypost.com/djE6dHJrX2QyNTJjZWJlM2E4YTQyMTliMGRiOGFkNjdlYWY4Mzk5",
+  "public_url": "https://track.easypost.com/djE6dHJrXzNjYjQ1ZGQ0YzIwNDQ2YTY5NTQ2ZDM2Yzk3MDYwZGQ0",
   "fees": [
     {
       "object": "Fee",
