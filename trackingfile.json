@@ -1,167 +1,252 @@
 {
-  "id": "trk_3cb45dd4c20446a69546d36c97060dd4",
+  "id": "trk_463f112b49364899b2cde6d12ca81f79",
   "object": "Tracker",
   "mode": "production",
-  "tracking_code": "9341989727009099933720",
+  "tracking_code": "1Z5833RX0350815158",
   "status": "delivered",
   "status_detail": "arrived_at_destination",
-  "created_at": "2020-09-01T20:32:50Z",
-  "updated_at": "2020-09-01T20:32:50Z",
-  "signed_by": null,
-  "weight": null,
+  "created_at": "2020-09-02T00:52:14Z",
+  "updated_at": "2020-09-02T00:52:14Z",
+  "signed_by": "MORRISON",
+  "weight": 80,
   "est_delivery_date": null,
   "shipment_id": null,
-  "carrier": "USPS",
+  "carrier": "UPS",
   "tracking_details": [
     {
       "object": "TrackingDetail",
-      "message": "Picked Up by Shipping Partner, USPS Awaiting Item",
-      "description": "August 22 5:17 am Picked Up by Shipping Partner, USPS Awaiting Item in PAULSBORO, NJ",
-      "status": "in_transit",
-      "status_detail": "in_transit",
-      "datetime": "2020-08-22T05:17:00Z",
-      "source": "USPS",
-      "carrier_code": "80",
+      "message": "Order Processed: Ready for UPS",
+      "description": "Order Processed: Ready for UPS",
+      "status": "pre_transit",
+      "status_detail": "label_created",
+      "datetime": "2020-06-15T19:03:31Z",
+      "source": "UPS",
+      "carrier_code": "M",
       "tracking_location": {
         "object": "TrackingLocation",
-        "city": "PAULSBORO",
-        "state": "NJ",
-        "country": null,
-        "zip": "08066"
+        "city": null,
+        "state": null,
+        "country": "US",
+        "zip": null
       }
     },
     {
       "object": "TrackingDetail",
-      "message": "Departed Shipping Partner Facility, USPS Awaiting Item",
-      "description": "August 22 9:30 am Departed Shipping Partner Facility, USPS Awaiting Item in PAULSBORO, NJ",
+      "message": "Origin Scan",
+      "description": "Origin Scan",
+      "status": "in_transit",
+      "status_detail": "received_at_origin_facility",
+      "datetime": "2020-06-15T23:12:23Z",
+      "source": "UPS",
+      "carrier_code": "I",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "Jackson",
+        "state": "MS",
+        "country": "US",
+        "zip": null
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Departed from Facility",
+      "description": "Departed from Facility",
       "status": "in_transit",
       "status_detail": "departed_facility",
-      "datetime": "2020-08-22T09:30:00Z",
-      "source": "USPS",
-      "carrier_code": "82",
+      "datetime": "2020-06-15T23:56:00Z",
+      "source": "UPS",
+      "carrier_code": "I",
       "tracking_location": {
         "object": "TrackingLocation",
-        "city": "PAULSBORO",
-        "state": "NJ",
-        "country": null,
-        "zip": "08066"
+        "city": "Jackson",
+        "state": "MS",
+        "country": "US",
+        "zip": null
       }
     },
     {
       "object": "TrackingDetail",
-      "message": "Departed Shipping Partner Facility, USPS Awaiting Item",
-      "description": "August 22 7:54 pm Departed Shipping Partner Facility, USPS Awaiting Item in CARTERET, NJ",
-      "status": "in_transit",
-      "status_detail": "departed_facility",
-      "datetime": "2020-08-22T19:54:00Z",
-      "source": "USPS",
-      "carrier_code": "82",
-      "tracking_location": {
-        "object": "TrackingLocation",
-        "city": "CARTERET",
-        "state": "NJ",
-        "country": null,
-        "zip": "07008"
-      }
-    },
-    {
-      "object": "TrackingDetail",
-      "message": "Accepted at USPS Destination Facility",
-      "description": "August 23 3:55 am Accepted at USPS Destination Facility in ENGLEWOOD CLIFFS, NJ",
-      "status": "in_transit",
-      "status_detail": "received_at_destination_facility",
-      "datetime": "2020-08-23T03:55:00Z",
-      "source": "USPS",
-      "carrier_code": "AD",
-      "tracking_location": {
-        "object": "TrackingLocation",
-        "city": "ENGLEWOOD CLIFFS",
-        "state": "NJ",
-        "country": null,
-        "zip": "07632"
-      }
-    },
-    {
-      "object": "TrackingDetail",
-      "message": "Arrived at Hub",
-      "description": "August 23 5:10 am Arrived at Hub in ENGLEWOOD CLIFFS, NJ",
+      "message": "Arrived at Facility",
+      "description": "Arrived at Facility",
       "status": "in_transit",
       "status_detail": "arrived_at_facility",
-      "datetime": "2020-08-23T05:10:00Z",
-      "source": "USPS",
-      "carrier_code": "07",
+      "datetime": "2020-06-16T09:38:00Z",
+      "source": "UPS",
+      "carrier_code": "I",
       "tracking_location": {
         "object": "TrackingLocation",
-        "city": "ENGLEWOOD CLIFFS",
-        "state": "NJ",
-        "country": null,
-        "zip": "07632"
+        "city": "Mesquite",
+        "state": "TX",
+        "country": "US",
+        "zip": null
       }
     },
     {
       "object": "TrackingDetail",
-      "message": "Out for Delivery",
-      "description": "August 23 7:16 am Out for Delivery in FORT LEE, NJ",
+      "message": "Departed from Facility",
+      "description": "Departed from Facility",
+      "status": "in_transit",
+      "status_detail": "departed_facility",
+      "datetime": "2020-06-16T21:07:00Z",
+      "source": "UPS",
+      "carrier_code": "I",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "Mesquite",
+        "state": "TX",
+        "country": "US",
+        "zip": null
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Arrived at Facility",
+      "description": "Arrived at Facility",
+      "status": "in_transit",
+      "status_detail": "arrived_at_facility",
+      "datetime": "2020-06-19T00:14:00Z",
+      "source": "UPS",
+      "carrier_code": "I",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "Bell",
+        "state": "CA",
+        "country": "US",
+        "zip": null
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Departed from Facility",
+      "description": "Departed from Facility",
+      "status": "in_transit",
+      "status_detail": "departed_facility",
+      "datetime": "2020-06-19T02:59:00Z",
+      "source": "UPS",
+      "carrier_code": "I",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "Bell",
+        "state": "CA",
+        "country": "US",
+        "zip": null
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Arrived at Facility",
+      "description": "Arrived at Facility",
+      "status": "in_transit",
+      "status_detail": "arrived_at_facility",
+      "datetime": "2020-06-19T03:32:00Z",
+      "source": "UPS",
+      "carrier_code": "I",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "US",
+        "zip": null
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Destination Scan",
+      "description": "Destination Scan",
+      "status": "in_transit",
+      "status_detail": "received_at_destination_facility",
+      "datetime": "2020-06-19T04:11:52Z",
+      "source": "UPS",
+      "carrier_code": "I",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "US",
+        "zip": null
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Loaded on Delivery Vehicle",
+      "description": "Loaded on Delivery Vehicle",
       "status": "out_for_delivery",
       "status_detail": "out_for_delivery",
-      "datetime": "2020-08-23T07:16:00Z",
-      "source": "USPS",
-      "carrier_code": "59",
+      "datetime": "2020-06-19T04:17:14Z",
+      "source": "UPS",
+      "carrier_code": "I",
       "tracking_location": {
         "object": "TrackingLocation",
-        "city": "FORT LEE",
-        "state": "NJ",
-        "country": null,
-        "zip": "07024"
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "US",
+        "zip": null
       }
     },
     {
       "object": "TrackingDetail",
-      "message": "Delivered, Front Door/Porch",
-      "description": "August 23 9:54 am Delivered, Front Door/Porch in FORT LEE, NJ",
-      "status": "delivered",
-      "status_detail": "arrived_at_destination",
-      "datetime": "2020-08-23T09:54:00Z",
-      "source": "USPS",
-      "carrier_code": "01",
+      "message": "Out For Delivery Today",
+      "description": "Out For Delivery Today",
+      "status": "out_for_delivery",
+      "status_detail": "out_for_delivery",
+      "datetime": "2020-06-19T09:16:22Z",
+      "source": "UPS",
+      "carrier_code": "I",
       "tracking_location": {
         "object": "TrackingLocation",
-        "city": "FORT LEE",
-        "state": "NJ",
-        "country": null,
-        "zip": "07024"
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "US",
+        "zip": null
+      }
+    },
+    {
+      "object": "TrackingDetail",
+      "message": "Delivered: Met Customer Woman",
+      "description": "Delivered",
+      "status": "delivered",
+      "status_detail": "arrived_at_destination",
+      "datetime": "2020-06-19T17:03:48Z",
+      "source": "UPS",
+      "carrier_code": "D",
+      "tracking_location": {
+        "object": "TrackingLocation",
+        "city": "LOS ANGELES",
+        "state": "CA",
+        "country": "US",
+        "zip": "90043"
       }
     }
   ],
   "carrier_detail": {
     "object": "CarrierDetail",
-    "service": "Bound Printed Matter",
+    "service": "UPS Ground",
     "container_type": null,
     "est_delivery_date_local": null,
     "est_delivery_time_local": null,
-    "origin_location": "FORT LEE NJ, 07024",
+    "origin_location": "Jackson MS US",
     "origin_tracking_location": {
       "object": "TrackingLocation",
-      "city": "PAULSBORO",
-      "state": "NJ",
-      "country": null,
-      "zip": "08066"
+      "city": "Jackson",
+      "state": "MS",
+      "country": "US",
+      "zip": null
     },
-    "destination_location": "FORT LEE NJ, 07024",
+    "destination_location": "LOS ANGELES CA US, 90043",
     "destination_tracking_location": {
       "object": "TrackingLocation",
-      "city": "FORT LEE",
-      "state": "NJ",
-      "country": null,
-      "zip": "07024"
+      "city": "LOS ANGELES",
+      "state": "CA",
+      "country": "US",
+      "zip": "90043"
     },
     "guaranteed_delivery_date": null,
     "alternate_identifier": null,
-    "initial_delivery_attempt": "2020-08-23T09:54:00Z"
+    "initial_delivery_attempt": "2020-06-19T17:03:48Z"
   },
   "finalized": true,
   "is_return": false,
-  "public_url": "https://track.easypost.com/djE6dHJrXzNjYjQ1ZGQ0YzIwNDQ2YTY5NTQ2ZDM2Yzk3MDYwZGQ0",
+  "public_url": "https://track.easypost.com/djE6dHJrXzQ2M2YxMTJiNDkzNjQ4OTliMmNkZTZkMTJjYTgxZjc5",
   "fees": [
     {
       "object": "Fee",

@@ -1,7 +1,7 @@
 var qs = require("querystring");
 var http = require("https");
 var fs = require("fs");
-
+require("dotenv").config();
 var req;
 
 var options = {
@@ -11,13 +11,13 @@ var options = {
   path: "/v2/trackers",
   headers: {
     "x-rapidapi-host": "easypostapi-easypost-v1.p.rapidapi.com",
-    "x-rapidapi-key": "9941eb10c3msh008ce8bd3efe177p107a49jsnb2768f9d860e",
+    "x-rapidapi-key": process.env.API_KEY,
     "content-type": "application/x-www-form-urlencoded",
     useQueryString: true,
   },
 };
 
-var trackingRequest = function(trackingNumber, carrierNumber) {
+var trackingRequest = function(trackingNumber, carrierNumber, cb) {
   req = http.request(options, function(res) {
     var chunks = [];
 
@@ -30,7 +30,8 @@ var trackingRequest = function(trackingNumber, carrierNumber) {
       // console.log(body.toString());
       var data = JSON.parse(body.toString());
       console.log(JSON.stringify(data, null, 2));
-      fs.writeFileSync("trackingfile.json", JSON.stringify(data, null, 2));
+      cb(data);
+      // fs.writeFileSync("trackingfile.json", JSON.stringify(data, null, 2));
     });
   });
 
