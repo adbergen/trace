@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": null,
-    "database": "tracking_history",
+    "database": "passport_demo",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -15,10 +15,6 @@
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",
-    "username": "ysm2a0r0micyrjau",
-    "password": null,
-    "database": "t9i3h15z12ml71mc",
-    "host": "z8dl7f9kwf2g82re.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
