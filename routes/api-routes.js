@@ -48,13 +48,15 @@ module.exports = function(app) {
       res.json({});
     } else {
       console.log(req.body);
-      trackingRequest(req.body.tracking, req.body.carrier);
-      var jsonData = fs.readFileSync("trackingfile.json", "utf8");
+      trackingRequest(req.body.tracking, req.body.carrier, function(data) {
+        res.json(data);
+      });
+      // var jsonData = fs.readFileSync("trackingfile.json", "utf8");
       // console.log(jsonData);
 
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
-      res.json(JSON.parse(jsonData));
+      // res.json(JSON.parse(jsonData));
     }
   });
 };

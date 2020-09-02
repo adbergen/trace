@@ -15,7 +15,7 @@ $(document).ready(() => {
     event.preventDefault();
     const userData = {
       tracking: trackingInput.val().trim(),
-      carrier: carrierInput.val().trim()
+      carrier: carrierInput.val().trim(),
     };
 
     if (!userData.tracking || !userData.carrier) {
@@ -33,7 +33,7 @@ $(document).ready(() => {
     console.log(tracking, carrier);
     $.post("/api/tracking", {
       tracking: tracking,
-      carrier: carrier
+      carrier: carrier,
     })
       .then((data) => {
         if (!data) {
@@ -42,16 +42,15 @@ $(document).ready(() => {
         console.log(data);
         // paste to html placeholder
         // If there's an error, handle it by throwing up a bootstrap alert
-      $("#trackingresults .list-group").empty()  
-      $("#trackingresults .card-header").empty()
-      $("#trackingresults").css("visibility","visible")    
-      $("#trackingresults .card-header").text(data.status)    
+        $("#trackingresults .list-group").empty();
+        $("#trackingresults .card-header").empty();
+        $("#trackingresults").css("visibility", "visible");
+        $("#trackingresults .card-header").text(data.status);
 
-      $.each(data.tracking_details, (i,value)=> {
-        var li = $(`<li class="list-group-item">${value.description}</li>`)
-        $("#trackingresults .list-group").append(li) 
-      })
-      
+        $.each(data.tracking_details, (i, value) => {
+          var li = $(`<li class="list-group-item">${value.description}</li>`);
+          $("#trackingresults .list-group").append(li);
+        });
       })
       .catch(handleLoginErr);
   }
@@ -61,5 +60,3 @@ $(document).ready(() => {
     $("#alert").fadeIn(500);
   }
 });
-
-
