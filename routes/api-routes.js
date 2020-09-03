@@ -2,7 +2,6 @@
 const db = require("../models");
 const passport = require("../config/passport");
 const trackingRequest = require("../util/tracker-api");
-const fs = require("fs");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -48,7 +47,7 @@ module.exports = function(app) {
       res.json({});
     } else {
       console.log(req.body);
-      trackingRequest(req.body.tracking, req.body.carrier, function(data) {
+      trackingRequest(req.body.tracking, req.body.carrier, (data) => {
         res.json(data);
       });
       // var jsonData = fs.readFileSync("trackingfile.json", "utf8");
