@@ -1,5 +1,5 @@
 {
-  "name": "project-2",
+  "name": "trace",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -14,7 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0",
     "bcryptjs": "2.4.3",
     "dotenv": "^8.2.0",
     "easypost": "^0.1.1",
@@ -29,8 +28,7 @@
     "querystring": "^0.2.0",
     "request": "^2.88.2",
     "require": "^2.4.20",
-    "sequelize": "^5.22.3",
-    "shipit": "^1.2.0"
+    "sequelize": "^5.22.3"
   },
   "devDependencies": {
     "chai": "^4.1.2",
@@ -44,10 +42,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adbergen/project-2.git"
+    "url": "git+https://github.com/adbergen/trace.git"
   },
   "bugs": {
-    "url": "https://github.com/adbergen/project-2/issues"
+    "url": "https://github.com/adbergen/trace/issues"
   },
-  "homepage": "https://github.com/adbergen/project-2#readme"
+  "homepage": "https://github.com/adbergen/trace#readme"
 }
