@@ -29,6 +29,7 @@ module.exports = function(app) {
         res.redirect(307, "/api/login");
       })
       .catch((err) => {
+        console.log(err);
         res.status(401).json(err);
       });
   });
@@ -43,20 +44,36 @@ module.exports = function(app) {
   // Route for getting some data about our user to be used client side
   app.post("/api/tracking", (req, res) => {
     console.log("POST  /api/tracking");
+
+    // console.log(db.User.create, "create");
     if (!req.user) {
       // The user is not logged in, send back an empty object
-      res.json({});
-    } else {
-      console.log(req.body);
-      trackingRequest(req.body.tracking, req.body.carrier, function(data) {
-        res.json(data);
-      });
-      // var jsonData = fs.readFileSync("trackingfile.json", "utf8");
-      // console.log(jsonData);
-
-      // Otherwise send back the user's email and id
-      // Sending back a password, even a hashed password, isn't a good idea
-      // res.json(JSON.parse(jsonData));
+      return res.json({});
     }
+
+    console.log("req.body", req.body);
+    console.log("req.user", req.user);
+    db.Tracking.create({
+      trackingNumber: req.body.tracking,
+      carrier: req.body.carrier,
+      UserId: req.user.id,
+    })
+      .then((result) => {
+        console.log("successfully added to the database", result);
+        trackingRequest(req.body.tracking, req.body.carrier, function(data) {
+          return res.json(data);
+        });
+      })
+      .catch(function(err) {
+        console.log(err);
+        return res.status(500).json(err);
+      });
+
+    // var jsonData = fs.readFileSync("trackingfile.json", "utf8");
+    // console.log(jsonData);
+
+    // Otherwise send back the user's email and id
+    // Sending back a password, even a hashed password, isn't a good idea
+    // res.json(JSON.parse(jsonData));
   });
 };
