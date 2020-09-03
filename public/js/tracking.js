@@ -13,16 +13,16 @@ $(document).ready(() => {
   // When the signup button is clicked, we validate the email and password are not blank
   trackingForm.on("submit", (event) => {
     event.preventDefault();
-    const userData = {
+    const trackingData = {
       tracking: trackingInput.val().trim(),
-      carrier: carrierInput.val().trim()
+      carrier: carrierInput.val().trim(),
     };
 
-    if (!userData.tracking || !userData.carrier) {
+    if (!trackingData.tracking || !trackingData.carrier) {
       return;
     }
     // If we have an tracking and carrier, run the userTracking function
-    userTracking(userData.tracking, userData.carrier);
+    userTracking(trackingData.tracking, trackingData.carrier);
     trackingInput.val("");
     carrierInput.val("");
   });
@@ -56,7 +56,7 @@ $(document).ready(() => {
   }
 
   function handleLoginErr(err) {
-    $("#alert .msg").text(err.responseJSON);
+    $("#alert .msg").text(JSON.stringify(err.responseJSON));
     $("#alert").fadeIn(500);
   }
 });
