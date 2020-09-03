@@ -10,13 +10,44 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
+  <div class="container right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+      <form action="#" class="form" id="form1">
+        <h2 class="form__title">Sign Up</h2>
+        <input type="text" placeholder="User"  class="input" />
+        <input type="email" placeholder="Email" id="email-input" class="input" />
+        <input type="password" placeholder="Password" id="password-input" class="input" />
+        <button type="submit" id="signupBtn" class="btn" >Sign Up</button>
+      </form>
+    </div>
+
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+      <form action="#" class="form" id="form2">
+        <h2 class="form__title">Sign In</h2>
+        <input type="email" placeholder="Email" id="email-inputIn" class="input" />
+        <input type="password" placeholder="Password" id="password-inputIn" class="input" />
+        <a href="#" class="link">Forgot your password?</a>
+        <button id="loginBtn" class="btn">Sign In</button>
+      </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+          <button class="btn" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">Sign Up</button>
+        </div>
       </div>
     </div>
-  </nav>
-  <div class="container">
+  </div>
+
+
+  <!-- <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h2>Login Form</h2>
@@ -35,10 +66,10 @@
         <p>Or sign up <a href="/">here</a></p>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="./js/login.js"></script>
 
 </body>
 
