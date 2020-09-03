@@ -8,14 +8,14 @@ $(document).ready(() => {
   // Getting references to our form and input
   const trackingForm = $("form.tracking");
   const trackingInput = $("input#tracking-input");
-  const carrierInput = $("input#carrier-input");
+  const carrierInput = $("select#carrier-input");
 
   // When the signup button is clicked, we validate the email and password are not blank
   trackingForm.on("submit", (event) => {
     event.preventDefault();
     const userData = {
       tracking: trackingInput.val().trim(),
-      carrier: carrierInput.val().trim(),
+      carrier: carrierInput.val().trim()
     };
 
     if (!userData.tracking || !userData.carrier) {

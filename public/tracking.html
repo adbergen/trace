@@ -47,12 +47,17 @@
             </div>
             <div class="form-group">
               <label for="carrierInput">Carrier:</label>
-              <input
+              <select
                 type="tracking"
                 class="form-control"
                 id="carrier-input"
                 placeholder="Carrier"
-              />
+              ><option id="fedex">fedex</option>
+              <option id="ups">ups</option>
+              <option id="usps">usps</option>
+              <option id="DHLExpress">DHLExpress</option>
+              <option id="amazon">AmazonMws</option>
+            </select>
             </div>
             <button type="submit" class="btn btn-default btn-dark">
               Track It
