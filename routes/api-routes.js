@@ -47,13 +47,6 @@ module.exports = function(app) {
     // console.log(db.User.create, "create");
     if (!req.user) {
       // The user is not logged in, send back an empty object
-<<<<<<< HEAD
-      res.json({});
-    } else {
-      console.log(req.body);
-      trackingRequest(req.body.tracking, req.body.carrier, (data) => {
-        res.json(data);
-=======
       return res.json({});
     }
 
@@ -73,7 +66,6 @@ module.exports = function(app) {
       .catch(function(err) {
         console.log(err);
         return res.status(500).json(err);
->>>>>>> 179bc610314ff7a05f131fd2948ac739c088ed37
       });
 
     // var jsonData = fs.readFileSync("trackingfile.json", "utf8");
