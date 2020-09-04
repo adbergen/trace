@@ -14,7 +14,22 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
+
+
+    <div class="nav-section">
+      <nav>
+          <ul>
+              <li><a href="/logout">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+
+
+
+    <!-- <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="/logout">
@@ -22,16 +37,16 @@
           </a>
         </div>
       </div>
-    </nav>
-    <div class="container">
+    </nav> -->
+    <!-- <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
           <h4>Welcome <span class="member-name"></span></h4>
         </div>
-      </div>
+      </div> -->
     </div>
     <br />
-    <div class="container card center">
+    <div class="container card center" id="trackdisplay">
       <div class="row p-3">
         <div class="col-md-6 col-md-offset-3">
           <h2>Track Your Package</h2>
@@ -65,19 +80,22 @@
           </form>
           <br />
         </div>
+        <div
+        id="trackingresults"
+        class="card col"
+        style="overflow-y: auto;height:382px"
+      >
+        <div class="card-header"></div>
+        <ul class="list-group list-group-flush"></ul>
+      </div>
       </div>
     </div>
     <!-- <div class="container card center"></div> -->
-    <div
-      id="trackingresults"
-      class="card"
-      style="width: 18rem;visibility: hidden;"
-    >
-      <div class="card-header"></div>
-      <ul class="list-group list-group-flush"></ul>
-    </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/tracking.js"></script>
   </body>
 </html>
+<!-- search for pacakge -->
+<!-- save packages in transit -->
