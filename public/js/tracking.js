@@ -48,7 +48,7 @@ $(document).ready(() => {
         $("#trackingresults .card-header").text(data.status);
 
         $.each(data.tracking_details, (i, value) => {
-          var li = $(`<li class="list-group-item">${value.description}</li>`);
+          var li = $(`<li class="list-group-item">${value.description + " " + value.tracking_location.city}</li>`);
           $("#trackingresults .list-group").append(li);
         });
       })
