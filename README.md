@@ -24,28 +24,56 @@ This application is designed to track packages through user provided tracking nu
     <a href="https://github.com/adbergen/trace">
       GitHub
     </a>
-
   </h4>
 </div>
-
 ![Screenshot of Home Assistant Header](https://www.supplychain247.com/images/article/sick_localization_1019wide.jpg)
-
-As of 2018, I have migrated everything to a Docker based platform. You can read all about it here:
-[Migration Blog Post](https://www.vCloudInfo.com/2018/02/journey-to-docker.html)
-
 <hr>
-<h3 align="center" style="margin-bottom:10px">Table of Contents</h3>
-
-- [Installation](#Installation)
-- [Usage](#parameters)
-  - [Aliases](#aliases)
-  - [Sequence](#sequence)
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
-- [Special thanks](#special-thanks)
-
 <hr>
-
 ## Installation
-
+<br>
+Using npm:
+<br>
+<br>
     npm install
+<hr>
+## Usage
+<p> This is a package tracking application that supports the following carriers' tracking information: </p>
+<ul>
+<li>UPS</li>
+<li>DHL</li>
+<li>Amazon</li>
+<li>USPS</li>
+<li>FedEx</li>
+</ul>
+<hr>
+## Technologies
+<ul>
+<li>HTML, CSS, Bootstrap, Bulma</li>
+<li>Javascript, jQuery</li>
+<li>node.js, Express, Seqeulize, MySQL, dotenv, Passport, Bcrypt</li>
+<li>Heroku, GitHub</li>
+<li>EasyPost API</li>
+</ul>
+<hr>
+## Roadmap
+<ul>
+<li>Automatically detect the shipping carrier</li>
+<li>Email and user authentication</li>
+<li>Implementing an Email and SMS notification</li>
+<li>Adding a description to tracking number</li>
+<li>Ability to print and create labels for postage</li>
+<li>Implementing Google geolocation API</li>
+<li>Monetization: Advertising, Link to paypal/ venmo, Selling data</li>
+</ul>
+<hr>
+## Contributing
+- Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+- Contributors: Hojin, Lane, Anthony & Miguel
+<hr><hr>
