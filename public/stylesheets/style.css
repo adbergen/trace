@@ -23,11 +23,13 @@ body {
 #tracking2{
 	margin: 20px 0px 0px 20px;
 }
+
 nav ul {
 	width: 100%;
 	margin: 0 auto;
 	background-color: rgba(255, 255, 255, 0.5);
 	text-align: center;
+
 }
 nav ul li {
 	list-style: none;
@@ -46,6 +48,8 @@ nav ul li a {
 nav ul li a:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 }
+
+
 body {
 	align-items: center;
 	background-color: var(--white);
@@ -56,6 +60,7 @@ body {
 	background-size: cover;
 	display: grid;
 	height: 100vh;
+
 }
 .form__title {
 	font-weight: 300;
