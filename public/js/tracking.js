@@ -4,7 +4,14 @@ $(document).ready(() => {
   // $.get("/api/user_data").then((data) => {
   //   $(".member-name").text(data.email);
   // });
-
+  $.get("/api/user_data").then((data) => {
+    $.each(data.trackings, (i, value) => {
+      console.log(value.trackingNumber);
+      const li = $(`<li class="list-group-item">${value.trackingNumber}</li>`);
+      $(".trackinghistory").append(li);
+    });
+    console.log(data);
+  });
   // Getting references to our form and input
   const trackingForm = $("form.tracking");
   const trackingInput = $("input#tracking-input");
@@ -40,6 +47,17 @@ $(document).ready(() => {
           window.location.replace("/login");
         }
         console.log(data);
+        $.get("/api/user_data").then((data) => {
+          console.log(data);
+          $(".trackinghistory").empty();
+          $.each(data.trackings, (i, value) => {
+            const li = $(
+              `<li class="list-group-item">${value.trackingNumber}</li>`
+            );
+
+            $(".trackinghistory").append(li);
+          });
+        });
         // paste to html placeholder
         // If there's an error, handle it by throwing up a bootstrap alert
         $("#trackingresults .list-group").empty();
@@ -48,7 +66,7 @@ $(document).ready(() => {
         $("#trackingresults .card-header").text(data.status);
 
         $.each(data.tracking_details, (i, value) => {
-          var li = $(`<li class="list-group-item">${value.description}</li>`);
+          var li = $(`<li class="list-group-item">${value.description + " " + value.tracking_location.city}</li>`);
           $("#trackingresults .list-group").append(li);
         });
       })
