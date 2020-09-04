@@ -1,78 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Passport Authentication</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
-    />
-    <link href="stylesheets/style.css" rel="stylesheet" />
-  </head>
-
 
 <head>
   <title>TRACE</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 
 <body>
+
+  <div class="nav-section">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <div class="container right-panel-active">
     <!-- Sign Up -->
     <div class="container__form container--signup">
       <form action="#" class="form" id="form1">
         <h2 class="form__title">Sign Up</h2>
-        <input type="text" placeholder="User"  class="input" />
+        <input type="text" placeholder="User" class="input" />
         <input type="email" placeholder="Email" id="email-input" class="input" />
         <input type="password" placeholder="Password" id="password-input" class="input" />
-        <button type="submit" id="signupBtn" class="btn" >Sign Up</button>
+        <button type="submit" id="signupBtn" class="btn">Sign Up</button>
       </form>
     </div>
 
 
-      <!-- Sign In -->
-      <div class="container__form container--signin">
-        <form action="#" class="form" id="form2">
-          <h2 class="form__title">Sign In</h2>
-          <input
-            type="email"
-            placeholder="Email"
-            id="email-inputIn"
-            class="input"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            id="password-inputIn"
-            class="input"
-          />
-          <a href="#" class="link">Forgot your password?</a>
-          <button id="loginBtn" class="btn">Sign In</button>
-        </form>
-      </div>
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+      <form action="#" class="form" id="form2">
+        <h2 class="form__title">Sign In</h2>
+        <input type="email" placeholder="Email" id="email-inputIn" class="input" />
+        <input type="password" placeholder="Password" id="password-inputIn" class="input" />
+        <a href="#" class="link">Forgot your password?</a>
+        <button id="loginBtn" class="btn">Sign In</button>
+      </form>
+    </div>
 
-      <!-- Overlay -->
-      <div class="container__overlay">
-        <div class="overlay">
-          <div class="overlay__panel overlay--left">
-            <button class="btn" id="signIn">Sign In</button>
-          </div>
-          <div class="overlay__panel overlay--right">
-            <button class="btn" id="signUp">Sign Up</button>
-          </div>
+    <!-- Overlay -->
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+          <button class="btn" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">Sign Up</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="alert">
-      <p style="color: red;" class="msg"></p>
-    </div>
+  <div id="alert">
+    <p style="color: red;" class="msg"></p>
+  </div>
 
-    <!-- <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h2>Login Form</h2>
@@ -93,7 +84,11 @@
     </div>
   </div> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/login.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/login.js"></script>
+</body>
+
 </html>
