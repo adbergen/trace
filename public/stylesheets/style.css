@@ -24,6 +24,10 @@ body {
 	margin: 20px 0px 0px 20px;
 }
 
+footer{
+    padding: 0.5rem 0.25rem 1rem !important;
+}
+
 nav ul {
 	width: 100%;
 	margin: 0 auto;
