@@ -27,6 +27,14 @@ body {
 footer{
     padding: 0.5rem 0.25rem 1rem !important;
 }
+#logo{
+	position: relative;
+	left: 50%;
+	bottom: -30px;
+	width: 100px;
+	height: 100px;
+	margin-left: -20px;
+}
 
 nav ul {
 	width: 100%;
