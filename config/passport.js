@@ -15,7 +15,8 @@ passport.use(
       db.User.findOne({
         where: {
           email: email
-        }
+        },
+        include: [db.Tracking]
       }).then(dbUser => {
         // If there's no user with the given email
         if (!dbUser) {

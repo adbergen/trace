@@ -2,7 +2,6 @@
 const db = require("../models");
 const passport = require("../config/passport");
 const trackingRequest = require("../util/tracker-api");
-const fs = require("fs");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -12,7 +11,7 @@ module.exports = function(app) {
     // Sending back a password, even a hashed password, isn't a good idea
     res.json({
       email: req.user.email,
-      id: req.user.id,
+      id: req.user.id
     });
   });
 
@@ -23,12 +22,12 @@ module.exports = function(app) {
     console.log("POST  /api/signup", req.body);
     db.User.create({
       email: req.body.email,
-      password: req.body.password,
+      password: req.body.password
     })
       .then(() => {
         res.redirect(307, "/api/login");
       })
-      .catch((err) => {
+      .catch(err => {
         console.log(err);
         res.status(401).json(err);
       });
@@ -39,6 +38,21 @@ module.exports = function(app) {
     console.log("GET  /logout");
     req.logout();
     res.redirect("/");
+  });
+  app.get("/api/user_data", (req, res) => {
+    if (!req.user) {
+      // The user is not logged in, send back an empty object
+      res.json({});
+    } else {
+      // Otherwise send back the user's email and id
+      // Sending back a password, even a hashed password, isn't a good idea
+      console.log(req.user);
+      res.json({
+        email: req.user.email,
+        id: req.user.id,
+        trackings: req.user.Trackings
+      });
+    }
   });
 
   // Route for getting some data about our user to be used client side
@@ -56,15 +70,16 @@ module.exports = function(app) {
     db.Tracking.create({
       trackingNumber: req.body.tracking,
       carrier: req.body.carrier,
-      UserId: req.user.id,
+      UserId: req.user.id
     })
-      .then((result) => {
+      .then(result => {
         console.log("successfully added to the database", result);
-        trackingRequest(req.body.tracking, req.body.carrier, function(data) {
+        req.user.Trackings.push(result);
+        trackingRequest(req.body.tracking, req.body.carrier, data => {
           return res.json(data);
         });
       })
-      .catch(function(err) {
+      .catch(err => {
         console.log(err);
         return res.status(500).json(err);
       });

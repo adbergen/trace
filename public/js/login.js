@@ -5,12 +5,12 @@ $(document).ready(() => {
   const passwordInput = $("#password-input");
 
   // When the signup button is clicked, we validate the email and password are not blank
-  signUpForm.on("click", (event) => {
+  signUpForm.on("click", event => {
     event.preventDefault();
     console.log(emailInput.val());
     const userData = {
       email: emailInput.val().trim(),
-      password: passwordInput.val().trim(),
+      password: passwordInput.val().trim()
     };
 
     if (!userData.email || !userData.password) {
@@ -29,7 +29,7 @@ $(document).ready(() => {
     console.log("USer info", email, password);
     $.post("/api/signup", {
       email: email,
-      password: password,
+      password: password
     })
       .then(() => {
         window.location.replace("/tracking");
@@ -50,11 +50,11 @@ const emailInput = $("#email-inputIn");
 const passwordInput = $("#password-inputIn");
 
 // When the form is submitted, we validate there's an email and password entered
-loginForm.on("click", (event) => {
+loginForm.on("click", event => {
   event.preventDefault();
   const userData = {
     email: emailInput.val().trim(),
-    password: passwordInput.val().trim(),
+    password: passwordInput.val().trim()
   };
 
   if (!userData.email || !userData.password) {
@@ -71,13 +71,13 @@ loginForm.on("click", (event) => {
 function loginUser(email, password) {
   $.post("/api/login", {
     email: email,
-    password: password,
+    password: password
   })
     .then(() => {
       window.location.replace("/tracking");
       // If there's an error, log the error
     })
-    .catch((err) => {
+    .catch(err => {
       console.log(err);
     });
 }
@@ -85,7 +85,8 @@ function loginUser(email, password) {
 //ANIMATION STUFF
 const signInBtn = document.getElementById("signIn");
 const signUpBtn = document.getElementById("signUp");
-const fistForm = document.getElementById("form1");
+// eslint-disable-next-line no-unused-vars
+const firstForm = document.getElementById("form1");
 const secondForm = document.getElementById("form2");
 const container = document.querySelector(".container");
 
@@ -98,4 +99,4 @@ signUpBtn.addEventListener("click", () => {
 });
 
 // fistForm.addEventListener("submit", (e) => e.preventDefault());
-secondForm.addEventListener("submit", (e) => e.preventDefault());
+secondForm.addEventListener("submit", e => e.preventDefault());

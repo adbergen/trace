@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>TRACE</title>
@@ -15,20 +15,98 @@
 
   <body>
 
-
     <div class="nav-section">
       <nav>
-          <ul>
-              <li><a href="/logout">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
+        <ul>
+          <li><a href="/logout">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
     </div>
 
+    <nav class="navbar navbar-default">
 
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/logout">
+            Logout
+          </a>
+        </div>
+      </div>
+    </nav> -->
+    <!-- <div class="main" style="display:flex; justify-content :space-evenly">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h4>Welcome <span class="member-name"></span></h4>
+            <div id="trackinghistory" class="card" style="width: 16rem;">
+              <div class="card-header"></div>
+              <ul class="trackinghistory list-group list-group-flush"></ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!-- <br /> -->
+    <!-- <div class="container card center">
+        <div class="row p-3">
+          <div class="col-md-6 col-md-offset-3">
+            <h2>Track Your Package</h2>
+            <form class="tracking">
+              <div class="form-group">
+                <label for="trackingInput">Tracking Number:</label>
+                <input
+                  type="carrier"
+                  class="form-control"
+                  id="tracking-input"
+                  placeholder="Tracking Number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="carrierInput">Carrier:</label>
+                <select
+                  type="tracking"
+                  class="form-control"
+                  id="carrier-input"
+                  placeholder="Carrier"
+                  ><option id="fedex">fedex</option>
+                  <option id="ups">ups</option>
+                  <option id="usps">usps</option>
+                  <option id="DHLExpress">DHLExpress</option>
+                  <option id="amazon">AmazonMws</option>
+                </select>
+    
+              </div>
+              <button type="submit" class="btn btn-default btn-dark">
+                Track It
+              </button>
+            </form>
+            <br />
+          </div>
+        </div>
+        <div
+        id="trackingresults"
+        class="card col"
+        style="overflow-y: auto;height:382px"
+      >
+        <div class="card-header"></div>
+        <ul class="list-group list-group-flush"></ul>
+      </div>
+      </div>
+    </div>
 
+    <!- <div class="container card center"></div> -->
+
+    <!-- <div
+      id="trackingresults"
+      class="card"
+      style="width: 18rem;visibility: hidden;"
+    >
+      <div class="card-header"></div>
+      <ul class="list-group list-group-flush"></ul>
+    </div> -->
+    
     <!-- <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -44,59 +122,116 @@
           <h4>Welcome <span class="member-name"></span></h4>
         </div>
       </div> -->
-    </div>
-    <br />
-    <div class="container card center" id="trackdisplay">
-      <div class="row p-3">
-        <div class="col-md-6 col-md-offset-3">
-          <h2>Track Your Package</h2>
-          <form class="tracking">
-            <div class="form-group">
-              <label for="trackingInput">Tracking Number:</label>
-              <input
-                type="carrier"
-                class="form-control"
-                id="tracking-input"
-                placeholder="Tracking Number"
-              />
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <title>TRACE</title>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+          />
+          <link href="stylesheets/style.css" rel="stylesheet" />
+        </head>
+        <body>
+          <div class="nav-section">
+            <nav>
+                <ul>
+                    <li><a href="/logout">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+          </div>
+          <!-- <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="/logout">
+                  Logout
+                </a>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="carrierInput">Carrier:</label>
-              <select
-                type="tracking"
-                class="form-control"
-                id="carrier-input"
-                placeholder="Carrier">
-                <option default>Select a Carrier</option>
-                <option id="fedex">FedEx</option>
-              <option id="ups">UPS</option>
-              <option id="usps">USPS</option>
-              <option id="DHLExpress">DHLExpress</option>
-              <option id="amazon">AmazonMws</option>
-            </select>
-            </div>
-            <button type="submit" class="btn btn-default btn-dark">
-              Track It
-            </button>
-          </form>
+          </nav> -->
+          <!-- <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <h4>Welcome <span class="member-name"></span></h4>
+              </div>
+            </div> -->
+          </div>
           <br />
-        </div>
-        <div
-        id="trackingresults"
-        class="card col"
-        style="overflow-y: auto;height:382px"
-      >
-        <div class="card-header"></div>
-        <ul class="list-group list-group-flush"></ul>
-      </div>
-      </div>
-    </div>
-    <!-- <div class="container card center"></div> -->
-    
+          <div class="container card center" id="trackdisplay">
+            <div class="row p-3">
+              <div class="col-md-6 col-md-offset-3">
+                <h2>Track Your Package</h2>
+                <form class="tracking">
+                  <div class="form-group">
+                    <label for="trackingInput">Tracking Number:</label>
+                    <input
+                      type="carrier"
+                      class="form-control"
+                      id="tracking-input"
+                      placeholder="Tracking Number"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="carrierInput">Carrier:</label>
+                    <select
+                      type="tracking"
+                      class="form-control"
+                      id="carrier-input"
+                      placeholder="Carrier">
+                      <option default>Select a Carrier</option>
+                      <option id="fedex">FedEx</option>
+                    <option id="ups">UPS</option>
+                    <option id="usps">USPS</option>
+                    <option id="DHLExpress">DHLExpress</option>
+                    <option id="amazon">AmazonMws</option>
+                  </select>
+                  </div>
+                  <button type="submit" class="btn btn-default btn-dark">
+                    Track It
+                  </button>
+                </form>
+                <br />
+              </div>
+              <div
+              id="trackingresults"
+              class="card col"
+              style="overflow-y: auto;height:382px">
+              <div class="card-header"></div>
+              <ul class="list-group list-group-flush"></ul>
+            </div>
+            </div>
+          </div>
+          <!-- <div class="container card center"></div> -->
+          <div class="main" style="display:flex; justify-content :space-evenly">
+            <div class="container">
+              <div class="row" id="tracking2">
+                
+                <!-- <div class="col-md-6 col-md-offset-3"> -->
+                <span justify-content:center :space-evenly><h4>Tracking Numbers</span></h4>
+                  <div id="trackinghistory" class="card" style="width: 20rem;">
+                    <div class="card-header"></div>
+                    <ul class="trackinghistory list-group list-group-flush"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/tracking.js"></script>
-  </body>
-</html>
-<!-- search for pacakge -->
-<!-- save packages in transit -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script type="text/javascript" src="js/tracking.js"></script>
+          <footer>
+            <p>TRACE</p>
+            <!-- <p><a href="mailto:hege@example.com">hege@example.com</a></p> -->
+          </footer>
+
+
+        </body>
+      </html>
+      <!-- search for pacakge -->
+      <!-- save packages in transit -->    
