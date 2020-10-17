@@ -42,7 +42,6 @@ This application is designed to track packages through user provided tracking nu
 - [License](#license)
 
 <hr>
-
 ## Installation
 
 <br>
