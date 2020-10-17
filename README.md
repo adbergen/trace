@@ -17,33 +17,45 @@ A package tracking application
 This application is designed to track packages through user provided tracking number and carrier.  In return, the user will receive up to date information on their package. The layout and tracking capabilities should inspire you to streamline package tracking needs.  Feel free to use and contribute.</p>
 <div align="center"><a name="menu"></a>
   <h4>
-    <a href="https://tracerx.herokuapp.com/">
-      Heroku
+    <a href="https://github.com/adbergen/trace">
+      GitHub Repository
     </a>
     <span> | </span>
-    <a href="https://github.com/adbergen/trace">
-      GitHub
+<a href="https://tracerx.herokuapp.com/">
+      Heroku Deployment
     </a>
+    
   </h4>
 </div>
-![Screenshot of Home Assistant Header](https://www.supplychain247.com/images/article/sick_localization_1019wide.jpg)
+
+![Screenshot of Home Assistant Header](public/img/trace.webp)
+
 <hr>
+
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies](#technologies)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
+
 <hr>
 ## Installation
+
 <br>
 Using npm:
+
 <br>
 <br>
-    npm install
+
+    npm install && npm start
+
 <hr>
+
 ## Usage
+
 <p> This is a package tracking application that supports the following carriers' tracking information: </p>
 <ul>
 <li>UPS</li>
@@ -52,8 +64,11 @@ Using npm:
 <li>USPS</li>
 <li>FedEx</li>
 </ul>
+
 <hr>
+
 ## Technologies
+
 <ul>
 <li>HTML, CSS, Bootstrap, Bulma</li>
 <li>Javascript, jQuery</li>
@@ -61,8 +76,11 @@ Using npm:
 <li>Heroku, GitHub</li>
 <li>EasyPost API</li>
 </ul>
+
 <hr>
+
 ## Roadmap
+
 <ul>
 <li>Automatically detect the shipping carrier</li>
 <li>Email and user authentication</li>
@@ -72,8 +90,13 @@ Using npm:
 <li>Implementing Google geolocation API</li>
 <li>Monetization: Advertising, Link to paypal/ venmo, Selling data</li>
 </ul>
+
 <hr>
+
 ## Contributing
+
 - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 - Contributors: Hojin, Lane, Anthony & Miguel
+
 <hr><hr>
